@@ -1,0 +1,8 @@
+const quotes = ["Programming isn't about what you know; it's about what you can figure out. - Chris Pine.","The most dangerous phrase in the language is, We've always done it this way.'- Grace Hopper.", "Code is read much more often than it is written.- Guido Van Rossum. ","Any fool can write code that a computer can understand. Good programmers write code that humans can understand. - Martin Fowler.","Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. - Brian Kernighan.","It's not a bug; it's an undocumented feature. - Anonymous.","When I wrote this code, only God and I understood what I did. Now only God knows. - Anonymous. ","A programming language is for thinking about programs, not for expressing programs you've already thought of. - Paul Graham.","Programmer: A machine that turns coffee into code. - Anonymous.","Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday's code. - Dan Salomon.","Clean code always looks like it was written by someone who cares. - Robert C. Martin.","Experience is the name everyone gives to their mistakes. - Oscar Wilde.",
+"Programming is the art of telling another human being what one wants the computer to do. - Donald Ervin Knuth.","Confusion is part of programming. - Felienne Hermans.", "Good programmers worry about data structures and their relationships. - Linus Torvalds. "]
+const btn = document.getElementById('btn');
+const quote = document.getElementById('quote');
+btn.addEventListener('click', ()=> {
+    const index = Math.floor(Math.random() * 15);
+    quote.textContent = quotes[index];
+})
